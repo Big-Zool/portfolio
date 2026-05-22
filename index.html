@@ -763,7 +763,7 @@
 
   const saved = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  setTheme(saved || (prefersDark ? 'dark' : 'light'));
+  setTheme('light');
 
   toggleBtn.addEventListener('click', () => {
     setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
